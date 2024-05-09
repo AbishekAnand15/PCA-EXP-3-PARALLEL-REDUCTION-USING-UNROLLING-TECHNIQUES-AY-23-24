@@ -1,9 +1,9 @@
 # PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES AY 23-24
-<h3>AIM:To implement the kernel reduceUnrolling16 and comapare the performance of kernal reduceUnrolling16 with kernal reduceUnrolling8 using nvprof.</h3>
-<h3>ENTER YOUR NAME:Abishek Xavier A</h3>
-<h3>ENTER YOUR REGISTER NO:212222230004</h3>
-<h3>EX. NO:03</h3>
-<h3>DATE:05-04-2024</h3>
+
+<h3> NAME: Abishek Xavier A<h3>
+<h3>REGISTER NO: 212222230004</h3>
+<h3>EX. NO: 03</h3>
+<h3>DATE:05:04:2024</h3>
 <h1> <align=center> PARALLEL REDUCTION USING UNROLLING TECHNIQUES </h3>
   Refer to the kernel reduceUnrolling8 and implement the kernel reduceUnrolling16, in which each thread handles 16 data blocks. Compare kernel performance with reduceUnrolling8 and use the proper metrics and events with nvprof to explain any difference in performance.</h3>
 
@@ -53,7 +53,6 @@ Memory Deallocation
 ```
 !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
 %load_ext nvcc4jupyter
-
 %%cuda
 #include <stdio.h>
 #include <cuda_runtime.h>
@@ -377,13 +376,13 @@ int main(int argc, char **argv)
 
     return EXIT_SUCCESS;
 }
-
 ```
 
 ## OUTPUT:
-![Screenshot (168)](https://github.com/SYEDADILBASHA1/PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES-AY-23-24/assets/134796157/4e420738-5cc1-4497-9108-f80799e15c4f)
 
-![Screenshot (167)](https://github.com/SYEDADILBASHA1/PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES-AY-23-24/assets/134796157/2e18943f-0fc1-4439-933d-aa27d334b6f9)
+![image](https://github.com/Joshitha-YUVARAJ/PCA-EXP-3-PARALLEL-REDUCTION-USING-UNROLLING-TECHNIQUES-AY-23-24/assets/145742770/086dc359-14bf-4e57-92a3-0c3741159209)
+
+
 
 ## RESULT:
-Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that _________ has executed with less elapsed time than _____________ with blocks_____,______.
+Thus the program has been executed by unrolling by 8 and unrolling by 16. It is observed that  Unrolling by 16 has executed with less elapsed time than  Unrolling by 8 with blocks 512,512.
